@@ -13,7 +13,8 @@ export const MOCK_PUBLIC_QUEST: QuestResponse = {
   xpReward: 50,
   status: 'Active',
   deadline: new Date(Date.now() + 7 * 86_400_000).toISOString(),
-  verifierAddress: 'GCFX7M4YVQQ2TESTVERIFYADDRESS7XQK3Q2J7W3R6CQJ6H3TL5E3QWIZARD',
+  verifierAddress:
+    'GCFX7M4YVQQ2TESTVERIFYADDRESS7XQK3Q2J7W3R6CQJ6H3TL5E3QWIZARD',
   requirements: ['Submit a pull request URL'],
   maxParticipants: 10,
   currentParticipants: 0,
@@ -25,7 +26,9 @@ export const MOCK_PUBLIC_QUEST: QuestResponse = {
   updatedAt: new Date().toISOString(),
 };
 
-export function buildQuestListPayload(quests: QuestResponse[] = [MOCK_PUBLIC_QUEST]) {
+export function buildQuestListPayload(
+  quests: QuestResponse[] = [MOCK_PUBLIC_QUEST]
+) {
   return {
     quests,
     total: quests.length,

@@ -1,8 +1,5 @@
 import { test, expect } from '@playwright/test';
-import {
-  MOCK_PUBLIC_QUEST,
-  mockQuestListApi,
-} from './helpers/quest-api-mock';
+import { MOCK_PUBLIC_QUEST, mockQuestListApi } from './helpers/quest-api-mock';
 
 /**
  * FE-039 / Issue #828: End-to-end tests for unauthenticated homepage
